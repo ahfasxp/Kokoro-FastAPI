@@ -76,10 +76,9 @@ export class VoiceService {
 
     async setVersion(version) {
         try {
-            const response = await fetch('/v2/audio/version', {
+            const response = await fetch(`/v2/audio/version?version=${encodeURIComponent(version)}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(version)
             });
             
             if (!response.ok) {
