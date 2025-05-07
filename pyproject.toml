@@ -37,7 +37,8 @@ dependencies = [
     "semchunk>=3.0.1",
     "mutagen>=1.47.0",
     "psutil>=6.1.1",
-    "kokoro==0.3.1"
+    "kokoro==0.3.1",
+    "misaki==0.6.1"
 ]
 
 [project.optional-dependencies]
