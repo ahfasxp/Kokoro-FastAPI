@@ -12,5 +12,5 @@ export VOICES_DIR=$PROJECT_ROOT/api/src/voices
 export WEB_PLAYER_PATH=$PROJECT_ROOT/web
 
 # Run FastAPI with CPU extras using uv run
-uv pip install -e ".[cpu]"
-uv run uvicorn api.src.main:app --reload --host 0.0.0.0 --port 8880
+pip install -e ".[cpu]"
+uvicorn api.src.main:app --reload --host 0.0.0.0 --port 8880
